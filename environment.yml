@@ -1,0 +1,21 @@
+name: awstakehome
+
+channels:
+  - anaconda
+  - conda-forge
+  - defaults
+
+dependencies:
+  # Core stack
+  - python>=3.6
+  # Assuming creating environment on AWS-EMR instance with pre-installed Spark
+  # Stack for reading NETCDF files from AWS S3 Bucket
+  - pyspark
+  - numpy
+  - boto3
+  - iris
+  - requests
+  - psycopg2
+
+  # Dev tooling
+  - ipython
