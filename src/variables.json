@@ -1,0 +1,24 @@
+{
+    "access": {
+        "access_key": "<access-key-of-user>",
+        "secret_access_key": "<secret-access-key-of-user>"
+        },
+    "etl": {
+        "source_bucket": "<s3-bucket-name-of-data-lake>",
+        "raw_data_bucket": "<s3-bucket-name-of-raw-data>",
+        "temps3dir": "<s3-bucket-name-to-store-temporary-csv>",
+        "jdbc": {
+            "db": "<name-of-redshift-database>",
+            "port": 5439,
+            "url":"<redshift-cluster-url>",
+            "schema": "<schema-name>",
+            "dbtable": {
+                "dew_point_temperature":"tmp_dew",
+                "air_temperature":"tmp_air_2",
+                "wind_speed_of_gust":"gust"
+                },
+            "user_name":"<database-username>",
+            "password":"<database-password>"
+            }
+        }
+}
